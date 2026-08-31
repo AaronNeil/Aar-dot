@@ -4,9 +4,13 @@
 
 -- See https://wiki.hypr.land/Configuring/Basics/Window-Rules/
 -- and https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
+local var = require("config/variables")
 
--- Example window rules that are useful
-
+--- WORKSPACE RULE ---
+hl.workspace_rule({ workspace = "special:discord", on_created_empty = "discord" })
+hl.workspace_rule({ workspace = "special:steam", on_created_empty = "steam" })
+hl.workspace_rule({ workspace = "special:caprine", on_created_empty = "caprine" })
+hl.workspace_rule({ workspace = "special:" .. var.music, on_created_empty = var.music })
 local suppressMaximizeRule = hl.window_rule({
   -- Ignore maximize requests from all apps. You'll probably like this.
   name           = "suppress-maximize-events",

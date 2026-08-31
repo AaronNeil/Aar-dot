@@ -8,4 +8,5 @@ return {
   fileManager = "dolphin",
   menu        = "hyprlauncher",
   browser     = "firefox",
+  music       = "spotify-launcher",
 }

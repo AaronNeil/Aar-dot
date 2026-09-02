@@ -3,9 +3,7 @@ Arch linux hyprland config
 
 # TODO:
 - More dynamic workspace movement
-- Wallpaper stuff
+- Dynamic Wallpaper
 - Themes?
 - Top Bar
 
-# FIX:
-- Steam and Discord low quality??

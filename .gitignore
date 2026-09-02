@@ -1,0 +1,19 @@
+# Ignore everything by default
+*
+
+!README.md
+!.gitignore
+!.zshrc
+!.p10k.zsh
+
+!.config/
+
+!.config/hypr/
+!.config/kitty/
+!.config/fastfetch/
+!.config/nvim/
+
+!.config/hypr/**
+!.config/kitty/**
+!.config/fastfetch/**
+!.config/nvim/**

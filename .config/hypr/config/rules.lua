@@ -35,6 +35,11 @@ hl.window_rule({
   no_focus = true,
 })
 
+hl.config({
+  ecosystem = {
+    enforce_permissions = true,
+  },
+})
 -- Layer rules also return a handle.
 -- local overlayLayerRule = hl.layer_rule({
 --     name  = "no-anim-overlay",

@@ -26,3 +26,5 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 alias sdn='shutdown now'
 alias rbn='sudo reboot now'
 alias ff='fastfetch'
+alias sps='sudo pacman -S'
+alias spu='sudo pacman -Syu --noconfirm'

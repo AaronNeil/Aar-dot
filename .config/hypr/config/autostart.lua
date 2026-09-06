@@ -1,6 +1,6 @@
-------------------
---- AUUTOSTART ---
-------------------
+-----------------
+--- AUTOSTART ---
+-----------------
 
 -- TODO:
 -- create dynamic wallpaper picker, static wallpaper for now

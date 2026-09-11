@@ -24,7 +24,6 @@ hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + ALT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 -- Special
 hl.bind(mainMod .. " + SHIFT + D", hl.dsp.workspace.toggle_special("discord"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.workspace.toggle_special("steam"))
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.workspace.toggle_special("caprine"))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.workspace.toggle_special(var.music))
 -- Move focus

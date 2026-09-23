@@ -17,8 +17,8 @@ Singleton {
   readonly property color ac2: "#523404"
   readonly property color ac3: "#271902"
 
-  readonly property string fontFamily: "Fira Code"
-  readonly property int fontSize: 15
+  readonly property string fontFamily: "OMORI_GAME"
+  readonly property int fontSize: 21
 
   readonly property int boxSize: 30
 

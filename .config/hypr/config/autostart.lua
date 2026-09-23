@@ -10,4 +10,5 @@ hl.on("hyprland.start", function()
 	-- Wallpaper --
 	hl.exec_cmd("awww-daemon")
 	hl.exec_cmd("awww img Pictures/Wallpapers/watcherEndD.png")
+	-- hl.exec_cmd("qs")
 end)

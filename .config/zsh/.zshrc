@@ -28,3 +28,6 @@ alias rbn='sudo reboot now'
 alias ff='fastfetch'
 alias sps='sudo pacman -S'
 alias spu='sudo pacman -Syu --noconfirm'
+
+# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
+[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh

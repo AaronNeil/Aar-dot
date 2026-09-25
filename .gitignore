@@ -3,8 +3,6 @@
 
 !README.md
 !.gitignore
-!.zshrc
-!.p10k.zsh
 
 !.config/
 
@@ -13,12 +11,14 @@
 !.config/fastfetch/
 !.config/nvim/
 !.config/quickshell/
+!.config/zsh/
 
 !.config/quickshell/**
 !.config/hypr/**
 !.config/kitty/**
 !.config/fastfetch/**
 !.config/nvim/**
+!.config/zsh/**
 
 .config/hypr/.luarc.json
 .config/quickshell/.qmlls.ini

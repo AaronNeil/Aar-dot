@@ -1,0 +1,4 @@
+module qs.services
+singleton NotificationService NotificationService.qml
+singleton ClockService ClockService.qml
+singleton BatteryService BatteryService.qml

@@ -1,7 +1,7 @@
 import Quickshell 
 import QtQuick
 
-import "./modules/"
+import "./modules/bar/"
 import "./services/"
 
 Scope {

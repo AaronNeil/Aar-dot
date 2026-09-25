@@ -20,6 +20,9 @@ Singleton {
   readonly property string fontFamily: "OMORI_GAME"
   readonly property int fontSize: 21
 
+  readonly property string iconFont: "Font Awesome 6 Brands"
+  readonly property int iconSize: 15
+
   readonly property int boxSize: 30
 
 }

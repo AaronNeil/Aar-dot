@@ -10,8 +10,8 @@ Rectangle {
   property string label: ""
   property var click_event: null
 
-  implicitWidth: text.implicitWidth + icon_image.implicitWidth + 20
-  implicitHeight: text.implicitHeight
+  implicitWidth:  layout.implicitWidth +  16
+  implicitHeight: text.implicitHeight > icon.implicitHeight ? text.implicitHeight: icon.implicitHeight
   radius: 6
   border.width: 1
   border.color: Config.sf1
@@ -45,15 +45,20 @@ Rectangle {
   RowLayout {
     id: layout
     anchors.centerIn: root
-    spacing: 2
+    spacing: root.label == ""? 0 : 3
 
-    Image {
-      id: icon_image
-      source: root.icon
+    Text{
+      id:  icon
+      font.pixelSize: Config.iconSize
+      font.family: Config.iconFont
+      text: root.icon
+      topPadding: 3
+      bottomPadding: 3
+      color: Config.sf1
 
       Layout.alignment: Qt.AlignVCenter
     }
-    
+
     Text{
       id: text
       font.pixelSize: Config.fontSize
@@ -63,7 +68,6 @@ Rectangle {
       color: Config.sf1
 
       Layout.alignment: Qt.AlignVCenter
-
     }
   }
 }

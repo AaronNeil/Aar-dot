@@ -19,3 +19,6 @@
 !.config/kitty/**
 !.config/fastfetch/**
 !.config/nvim/**
+
+.config/hypr/.luarc.json
+.config/quickshell/.qmlls.ini

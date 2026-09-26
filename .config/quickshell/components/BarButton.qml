@@ -8,9 +8,10 @@ Rectangle {
   
   property string icon: ""
   property string label: ""
-  property var click_event: null
 
-  implicitWidth:  layout.implicitWidth +  16
+  signal clicked()
+
+  implicitWidth:  Math.max(40, layout.implicitWidth +  16)
   implicitHeight: text.implicitHeight > icon.implicitHeight ? text.implicitHeight: icon.implicitHeight
   radius: 6
   border.width: 1
@@ -18,28 +19,17 @@ Rectangle {
   opacity: 0.8
   
   color: {
-    if (root.click_event == null) {
-      return Config.ac3
-    }
-    if (mouse_area.pressed) {
-      return Config.ac1
-    }
-    if (mouse_area.containsMouse) {
-      return Config.ac2
-    }
+    if (mouse_area.pressed) return Config.ac1
+    if (mouse_area.containsMouse) return Config.ac2
     return Config.ac3
   }
 
   MouseArea{
     id: mouse_area
     anchors.fill: root
+    hoverEnabled: true
 
-    enabled: root.click_event != null
-    hoverEnabled: root.click_event != null
-
-    onClicked : {
-     // Run click event
-    }
+    onClicked: root.clicked()
   }
 
   RowLayout {

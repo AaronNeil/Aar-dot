@@ -20,5 +20,9 @@
 !.config/nvim/**
 !.config/zsh/**
 
+# LSP
 .config/hypr/.luarc.json
 .config/quickshell/.qmlls.ini
+
+# zsh cache
+.config/zsh/.zcomp*

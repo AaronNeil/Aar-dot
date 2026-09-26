@@ -16,12 +16,12 @@ Scope {
         required property var modelData
         screen: modelData
         anchors {top: true; left: true; right: true }
-        margins { top: 2; left: 2; right: 2; bottom: 0}
+        margins { top: 2; left: 8; right: 8; bottom: 0}
         implicitHeight: Config.iconSize >= Config.fontSize - 10 ? Config.iconSize + 15: Config.iconSize + 2
         color:"transparent"
 
 
-        // --- LEFT LAYOUT ---
+// --- LEFT LAYOUT --- //
         RowLayout {
           id: left_layout
           anchors.left: parent.left
@@ -30,10 +30,11 @@ Scope {
           spacing: 5
 
           AppLauncherWidget {}
+          // DateWidget {}
           // WorkspaceWidget {}
         }
 
-        // --- CENTER LAYOUT ---
+// --- CENTER LAYOUT --- //
         RowLayout {
           id: center_layout
           anchors.centerIn: parent
@@ -43,7 +44,7 @@ Scope {
           ClockWidget {}
         }
 
-        // --- RIGHT LAYOUT ---
+// --- RIGHT LAYOUT --- //
         RowLayout {
           id: right_layout
           anchors.right : parent.right

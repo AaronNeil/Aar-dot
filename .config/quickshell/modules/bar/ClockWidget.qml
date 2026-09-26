@@ -7,6 +7,5 @@ import "../../components"
 BarButton {
   id: clock
   label: ClockService.time
-  click_event: "yes"
 }
 

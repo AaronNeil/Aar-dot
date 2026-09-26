@@ -1,10 +1,12 @@
 import Quickshell
+import QtQuick
 import qs.services
 
 import "../../components"
+import "../power"
 
 BarButton {
-  id: power
+  id: powerButton
   icon: "\uf011"
-  click_event: "yes"
+  onClicked: PowerWindow.toggle(powerButton)
 }
